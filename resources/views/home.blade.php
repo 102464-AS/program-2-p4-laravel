@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
- <title>Home</title>
-</head>
-<body>
- <h1>{{ $message }}</h1>
-</body>
-</html>
+@extends('layouts.app')
+@section('title', 'Homepagina')
+@section('content')
+ <h1>Welkom op de homepagina!</h1>
+ <p>Dit is een voorbeeld van een Laravel Blade-layout.</p>
+@endsection

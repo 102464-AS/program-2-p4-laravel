@@ -9,3 +9,7 @@ Route::get('/', function () {
 use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index']);
+
+Route::get('/about', function () {
+ return view('about');
+});
