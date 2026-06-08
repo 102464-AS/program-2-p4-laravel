@@ -7,9 +7,12 @@ Route::get('/', function () {
 });
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\EvenementController;
 
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/about', function () {
  return view('about');
 });
+
+Route::get('/evenementen', [EvenementController::class, 'index']);
