@@ -2,5 +2,5 @@
 @section('title', 'Homepagina')
 @section('content')
  <h1>Welkom op de homepagina!</h1>
- <p>Dit is een voorbeeld van een Laravel Blade-layout.</p>
+ <p>Dit is een de home pagina</p>
 @endsection
