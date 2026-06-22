@@ -25,9 +25,10 @@ class EvenementController extends Controller
 
         $evenement = Evenement::create($data);
 
-        return redirect()
-            ->route('evenementen.artiesten', $evenement->id)
-            ->with('success', 'Evenement succesvol aangemaakt. Koppel nu artiesten aan dit evenement.');
+        return view('evenementen.index', [
+            'items' => Evenement::all(),
+            'message' => 'Evenement succesvol aangemaakt.'
+        ]);
     }
 
     public function create()
