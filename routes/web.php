@@ -14,5 +14,3 @@ Route::get('/evenementen', [EvenementController::class, 'index']);
 Route::post('/evenementen', [EvenementController::class, 'store'])->name('evenementen.store');
 
 Route::get('/evenementen/create', [EvenementController::class, 'create'])->name('evenementen.create');
-
-Route::get('/evenementen/{id}/artiesten', [EvenementController::class, 'artiesten'])->name('evenementen.artiesten');
